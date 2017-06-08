@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:layout_weight="3"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewGioHang"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/textViewTenGioHang"
+            android:text="Ten Dien Thoai"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textViewGiaGioHang"
+            android:textColor="#3b5998"
+            android:text="Gia san pham"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnTru"
+                android:focusable="false"
+                android:layout_width="50dp"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+
+                android:text="-"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnGiaTri"
+                android:focusable="false"
+                android:textSize="25sp"
+                android:text="1"
+                android:background="@null"
+                android:layout_width="60dp"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnCong"
+                android:focusable="false"
+                android:layout_width="50dp"
+                android:textSize="25sp"
+                android:text="+"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
